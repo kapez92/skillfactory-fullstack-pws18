@@ -1,0 +1,138 @@
+@font-face{
+	src: url('fonts/Roboto/Roboto-Regular.ttf');
+	font-family: "Roboto Regular";
+	font-weight: 700;
+}
+body {
+	background-color: rgb(246, 242, 242);
+}
+header {
+	box-sizing: border-box;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	max-width: 1249px;
+	margin: 0 auto;
+	height: 89px;
+	background-color: rgb(49, 48, 48);
+}
+nav > .site-menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/*.site-menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}*/
+.site-menu li {	
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	min-height: 89px;
+}
+.site-menu a {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 25px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+.site-menu a:hover {
+	background: rgb(255, 63, 64);
+}
+.main-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1249px;
+	margin: 0 auto;
+}
+.wrapper-lead {
+	position: relative;
+	width: 617px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+}
+.lead {
+	font-size: 60px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+}
+.main-text {
+	padding-right: 170px;
+	width: 550px;
+}
+p { color: rgba(0,0,0,0.5);
+	font-size: 17px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+.button{
+	align-items: center;
+	margin-top: 20px;
+}
+.button a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	background-color: rgb(255, 63, 64);
+	padding: 15px 65px;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+.main-video a>img {
+	width: 546px;
+	height: 356px;
+}
+.foot {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	max-width: 1249px;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 89px;
+	background-color: rgb(49, 48, 48);
+}
+.ico {
+	margin-right: 70px;
+}
+.ico a {
+	margin-right: 5px;
+}
+.ico a>img {
+	width: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	.main-wrapper {
+		justify-content: flex-start;
+		margin-top: 0;
+	}
+	.wrapper-lead{
+		width: 500px;
+	}
+	.lead {
+		font-size: 50px;
+	}
+	.main-text {
+		padding-right: 0;
+	}
+	/*.main-video a>img	{
+		width: 100%;
+	}*/
+	.site-menu a {
+		padding: 0 15px;
+	}
+}
+
